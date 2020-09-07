@@ -22,7 +22,7 @@ public class UserController {
         return userService.createUser(newUser);
     }
 
-    @GetMapping("/login/{username}")
+    @GetMapping("/login/{username}/{password}")
     public User login(@PathVariable String username, @PathVariable String password) {
         return userService.login(username, password);
     }

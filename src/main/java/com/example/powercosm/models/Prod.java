@@ -25,7 +25,7 @@ public class Prod {
 
     @Lob
     @Column
-    private byte[] image;
+    private String image;
 
     public Prod() {}
 
@@ -61,11 +61,11 @@ public class Prod {
         this.desc = desc;
     }
 
-    public byte[] getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(byte[] image) {
+    public void setImage(String image) {
         this.image = image;
     }
 }
