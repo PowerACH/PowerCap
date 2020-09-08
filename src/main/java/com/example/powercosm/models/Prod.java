@@ -11,8 +11,8 @@ public class Prod {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
-    private String name;
+    @Column
+    private String prodName;
 
     @Column
     private double price;
@@ -21,20 +21,19 @@ public class Prod {
     private String category;
 
     @Column
-    private String desc;
+    private String prodInfo;
 
-    @Lob
     @Column
     private String image;
 
     public Prod() {}
 
-    public String getName() {
-        return name;
+    public String getProdName() {
+        return prodName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProdName(String prodName) {
+        this.prodName = prodName;
     }
 
     public double getPrice() {
@@ -53,12 +52,12 @@ public class Prod {
         this.category = category;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getProdInfo() {
+        return prodInfo;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setProdInfo(String prodInfo) {
+        this.prodInfo = prodInfo;
     }
 
     public String getImage() {

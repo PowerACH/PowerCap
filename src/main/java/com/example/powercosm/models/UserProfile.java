@@ -17,10 +17,10 @@ public class UserProfile {
     private String email;
 
     @Column
-    private String phone;
+    private String firstName;
 
     @Column
-    private String address;
+    private String lastName;
 
     public UserProfile() {}
 
@@ -40,20 +40,20 @@ public class UserProfile {
         this.email = email;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @JsonIgnore
