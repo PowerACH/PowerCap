@@ -3,8 +3,8 @@ package com.example.powercosm.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "prod")
-public class Prod {
+@Table(name = "makeup")
+public class Makeup {
 
     @Id
     @Column
@@ -26,7 +26,7 @@ public class Prod {
     @Column
     private String image;
 
-    public Prod() {}
+    public Makeup() {}
 
     public String getProdName() {
         return prodName;
