@@ -27,7 +27,8 @@ public class CartController {
     }
 
     @GetMapping("/total")
-    double getTotal() { return cartService.getTotal(); }
+    double getTotal() {
+        return cartService.getTotal(); }
 
     @GetMapping("/{prodName}")
     public Cart getCart(@PathVariable String prodName) {
