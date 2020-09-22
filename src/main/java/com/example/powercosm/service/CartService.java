@@ -14,4 +14,6 @@ public interface CartService {
     public HttpStatus deleteById(Long prodId);
 
     double getTotal();
+
+    int getQuantity();
 }

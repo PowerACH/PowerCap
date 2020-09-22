@@ -11,4 +11,6 @@ public interface CartRepository extends CrudRepository<Cart, Long> {
     @Query("SELECT SUM(c.price) FROM Cart c")
     public double getTotal();
 
+    @Query("SELECT SUM(c.quantity) FROM Cart c")
+    public int getQuantity();
 }

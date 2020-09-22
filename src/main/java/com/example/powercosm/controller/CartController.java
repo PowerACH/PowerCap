@@ -30,6 +30,10 @@ public class CartController {
     double getTotal() {
         return cartService.getTotal(); }
 
+    @GetMapping("/qty")
+    int getQuantity() {
+        return cartService.getQuantity(); }
+
     @GetMapping("/{prodName}")
     public Cart getCart(@PathVariable String prodName) {
         return cartService.getCart(prodName);

@@ -30,6 +30,9 @@ public class CartServiceImpl implements CartService{
     }
 
     @Override
+    public int getQuantity() {return CartRepository.getQuantity();}
+
+    @Override
     public HttpStatus deleteById(Long prodId) { CartRepository.deleteById(prodId);
         return null;
     }
